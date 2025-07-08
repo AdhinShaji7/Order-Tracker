@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Tracking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Order Tracking</h1>
+      <p>Track your order status in real-time</p>
+    </div>
+
+    <div class="order-info">
+      <h3>Order #MH2024001</h3>
+      <p>Estimated delivery: 2-3 business days</p>
+    </div>
+
+    <div class="tracking-container">
+      <div class="progress-line">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <div class="stages">
+        <div class="stage">
+          <div class="stage-icon active pulse" id="icon1">🛍️</div>
+          <div class="stage-label active" id="label1">Ordered</div>
+        </div>
+        <div class="stage">
+          <div class="stage-icon" id="icon2">📦</div>
+          <div class="stage-label" id="label2">Packed</div>
+        </div>
+        <div class="stage">
+          <div class="stage-icon" id="icon3">🚚</div>
+          <div class="stage-label" id="label3">Shipped</div>
+        </div>
+        <div class="stage">
+          <div class="stage-icon" id="icon4">🏠</div>
+          <div class="stage-label" id="label4">Delivered</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
